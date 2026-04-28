@@ -21,6 +21,7 @@
             --spacing-20: 20px;
             --spacing-24: 24px;
             --spacing-32: 32px;
+            --spacing-8: 8px;
         }
 
         * {
@@ -31,7 +32,10 @@
 
         body {
             font-family: var(--font-family);
-            background: linear-gradient(135deg, #f8f9fa 0%, #e8f1f5 100%);
+            background-color: var(--color-background);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 103.923' width='60' height='103.923'%3E%3Cpath d='M30 17.321L60 34.641L60 69.282L30 86.603L0 69.282L0 34.641Z M30 86.603L30 51.962 M0 34.641L30 51.962 M60 34.641L30 51.962 M0 103.923L30 121.244L60 103.923 M30 121.244L30 86.603 M0 0L30 17.321L60 0 M30 17.321L30 -17.321' stroke='%23e0e0e0' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+            background-size: 80px 138.564px;
+            background-attachment: fixed;
             color: var(--color-text);
             line-height: 1.6;
             min-height: 100vh;
@@ -170,6 +174,7 @@
             padding: var(--spacing-20);
             text-align: center;
             box-shadow: var(--shadow-sm);
+            margin-bottom: var(--spacing-24);
         }
 
         .btn {
@@ -321,7 +326,7 @@
     <div class="container">
         <!-- Header Section -->
         <header>
-            <img src="https://github.com/fathur6/fathurrahman.github.io/blob/main/870831135387.jpg?raw=true" alt="Dr. Fathurrahman Lananan" class="avatar">
+            <img src="https://github.com/fathur6/fathurrahman.github.io/blob/main/870831135387.jpg?raw=true" alt="Dr. Fathurrahman Lananan" class="avatar" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22120%22%20height%3D%22120%22%20viewBox%3D%220%200%20120%20120%22%3E%3Crect%20fill%3D%22%23ddd%22%20width%3D%22120%22%20height%3D%22120%22%2F%3E%3Ctext%20fill%3D%22%23999%22%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%20dy%3D%22.3em%22%20font-size%3D%2220%22%3EPhoto%3C%2Ftext%3E%3C%2Fsvg%3E'">
             <h1>Dr. Fathurrahman Lananan</h1>
             <p class="title">Senior Lecturer - <a href="https://fbim.unisza.edu.my/" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Faculty of Bioresources and Food Industry (FBIM)</a></p>
             <p class="title"><a href="https://www.unisza.edu.my/" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Universiti Sultan Zainal Abidin (UniSZA)</a></p>
@@ -340,7 +345,7 @@
 
         <!-- Research & Academic Links -->
         <div class="links-section">
-            <h3 style="font-size: 14px; font-weight: 600; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: var(--spacing-16);">
+            <h3 style="font-size: 14px; font-weight: 600; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: var(--spacing-16); padding-left: var(--spacing-8);">
                 Research Platforms
             </h3>
             <div class="links-grid">
